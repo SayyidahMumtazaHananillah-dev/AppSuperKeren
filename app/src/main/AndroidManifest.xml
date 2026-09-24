@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Halaman Utama / Login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Halaman Login Alternatif (kalau dipakai) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Halaman Register -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Halaman Dashboard (Pengganti DataSiswa biar gak error) -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
